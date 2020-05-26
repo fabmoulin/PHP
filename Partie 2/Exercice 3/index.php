@@ -6,36 +6,25 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Exercice 1 Partie 2 PHP</title>
-        <meta name="description" content="">
+        <title>Exercice 3 Partie 2 PHP</title>
+        <meta name="description" content="traduction code avec if else">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
     </head>
     <body>
 
 <?php //balise d'ouverture - indique qu'on va écrire en php //A mettre dans le body d'un fichier HTML mais appelé PHP et non pas HTML
-$age = 34; //creation d'une variable
-?>
+//pour remplacer un "echo" on peut écrire <?= (= au lieu de PHP)
+$gender = 'homme'; //creation d'une variable
 
-<?php
-if ($age >= 18 && $age < 120) {
-?>
-    <p>Vous êtes majeur</p>
-<?php 
-}
-
-elseif ($age < 18 && $age > 0) {
-?>
-    <p>Vous êtes mineur</p>
-<?php
+if ($gender != 'homme') {
+    echo 'C\est une développeuse';
 }
 
 else {
-?>
-
-<p>Vous avez fait une erreur</p>
-<?php
+    echo 'c\est un développeur';
 }
+
 ?>
 
     </body>
